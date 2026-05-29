@@ -1703,22 +1703,18 @@ img {
     padding-bottom: 4px;
   }
 
-  .site-header > .button {
-    justify-self: none;
-  }
-
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
     background:
-      linear-gradient(180deg, rgba(247, 244, 239, .35) 0%, rgba(247, 244, 239, .86) 42%, rgba(247, 244, 239, 1) 72%),
+      linear-gradient(180deg, rgba(247, 244, 239, .18) 0%, rgba(247, 244, 239, .72) 58%, rgba(247, 244, 239, 1) 100%),
       url("assets/hero-desk-wide.png") center top / cover no-repeat;
   }
 
   .hero-copy {
     width: calc(100vw - 36px);
     margin: 0 auto;
-    padding: 250px 0 44px;
+    padding: 360px 0 44px;
   }
 
   .hero-image {
@@ -1726,11 +1722,19 @@ img {
   }
 
   .hero h1 {
+    max-width: 100%;
+    margin: -150px 0 26px;
+    color: var(--green);
     font-size: 34px;
+    line-height: 1.04;
   }
 
   .hero p {
+    max-width: 100%;
+    margin: 0 0 28px;
+    color: var(--ink);
     font-size: 15px;
+    line-height: 1.5;
   }
 
   .hero-actions {
@@ -1749,11 +1753,68 @@ img {
     padding-right: 18px;
   }
 
-  .service-grid,
   .why-grid,
-  .audience-grid,
   .steps {
     grid-template-columns: 1fr;
+  }
+
+  /* Mobile swipe cards for Who I Help Best */
+  .audience-grid {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 30px;
+    padding: 8px 18px 18px;
+    margin-left: -18px;
+    margin-right: -18px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .audience-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .audience-item {
+    flex: 0 0 82%;
+    min-width: 260px;
+    min-height: 160px;
+    padding: 24px 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .66);
+    scroll-snap-align: center;
+  }
+
+  .audience-item,
+  .audience-item:nth-child(even) {
+    border-right: 1px solid var(--line);
+  }
+
+  /* Mobile swipe cards for Choose the Level of Support */
+  .service-grid {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 26px;
+    padding: 8px 18px 18px;
+    margin-left: -18px;
+    margin-right: -18px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .service-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-card {
+    flex: 0 0 86%;
+    min-width: 280px;
+    min-height: auto;
+    scroll-snap-align: center;
   }
 
   .ease-grid {
@@ -1779,7 +1840,7 @@ img {
     min-height: 230px;
     scroll-snap-align: center;
   }
-  .audience-item,
+  
   .why-grid article {
     border-right: 0;
   }
@@ -1951,9 +2012,6 @@ img {
 .contact-info-icon::before {
   width: 28px;
   height: 28px;
-}
-.contact-next-card {
-  padding: 30px 22px;
 }
 
 .contact-next-card {
