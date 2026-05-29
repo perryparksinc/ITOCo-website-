@@ -1749,7 +1749,6 @@ img {
     padding-right: 18px;
   }
 
-  .ease-grid,
   .service-grid,
   .why-grid,
   .audience-grid,
@@ -1757,6 +1756,29 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .ease-grid {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 26px;
+    padding: 8px 18px 18px;
+    margin-left: -18px;
+    margin-right: -18px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .ease-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ease-card {
+    flex: 0 0 82%;
+    min-width: 260px;
+    min-height: 230px;
+    scroll-snap-align: center;
+  }
   .audience-item,
   .why-grid article {
     border-right: 0;
