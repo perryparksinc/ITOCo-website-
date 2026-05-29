@@ -1686,6 +1686,10 @@ img {
     padding: 18px;
   }
 
+.site-header > .button {
+  display: none;
+}
+
   .site-header.is-scrolled {
     padding: 12px 18px;
   }
