@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Inbox to Ops Co.</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Inbox to Ops Co. home">
+        <img src="assets/itoco-logo-banner.png" alt="Inbox to Ops Co.">
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#who">Who I Help</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-dark" href="#book">Book a Free Discovery Call</a>
+    </header>
+
+    <main class="contact-page">
+      <section class="hero contact-hero" id="contact">
+        <div class="hero-copy">
+          <p class="about-kicker">Let’s Connect</p>
+          <h1>I’d love to hear from you.</h1>
+          <p>Whether you have a question, want to explore how we can work together, or you’re ready to get support in place, send a message anytime.</p>
+
+          <div class="hero-actions">
+            <h2>The fastest way to connect</h2>
+            <p>Book a free discovery call and pick a time that works for you.</p>
+            <a class="button button-dark" href="#book">Book Your Free Discovery Call</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-label="Desk with Inbox to Ops Co. mug, laptop, notebook, and plant"></div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-layout">
+          <aside class="contact-info-card">
+            <h2>Get in touch</h2>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon mail-icon" aria-hidden="true"></div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@inboxtoops.co">hello@inboxtoops.co</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon calendar-icon" aria-hidden="true"></div>
+              <div>
+                <h3>Availability</h3>
+                <p>Currently accepting new clients.</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon location-icon" aria-hidden="true"></div>
+              <div>
+                <h3>Based In</h3>
+                <p>New York, USA<br>Supporting clients remotely.</p>
+              </div>
+            </div>
+
+            <a class="button button-dark contact-info-button" href="#book">Book a Free Discovery Call</a>
+
+            <div class="contact-call-note">
+              <h3>Prefer to talk it through?</h3>
+              <p>A discovery call is a simple, no-pressure way to talk through what feels heavy, what kind of support you may need, and whether Inbox to Ops Co. is the right next step.</p>
+            </div>
+          </aside>
+
+          <section class="contact-form-card">
+            <h2>Send a message</h2>
+
+            <form class="contact-form" name="contact" method="POST">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+
+              <label for="email">Email <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+              <label for="business-name">Business Name</label>
+              <input type="text" id="business-name" name="business-name" placeholder="Your business name">
+
+              <label for="service-needed">What do you need help with? <span>*</span></label>
+              <select id="service-needed" name="service-needed" required>
+                <option value="">Select a service...</option>
+                <option value="executive-va-support">Executive VA Support</option>
+                <option value="online-business-manager">Online Business Manager</option>
+                <option value="digital-operations">Digital Operations (Project-based)</option>
+                <option value="add-on-services">Add-on Services</option>
+                <option value="not-sure">Not sure — let's talk!</option>
+              </select>
+
+              <label for="message">Tell me a little about what you need support with... <span>*</span></label>
+              <textarea id="message" name="message" placeholder="Share what feels heavy, what you need help organizing, or what kind of support you're looking for..." required></textarea>
+
+              <button class="button button-dark contact-submit" type="submit">Send Message</button>
+
+              <p class="contact-safe-note">Your information is safe and will never be shared.</p>
+            </form>
+          </section>
+        </div>
+
+        <div class="contact-next-card">
+          <h2>What to expect next</h2>
+
+          <div class="next-steps-grid">
+            <article class="next-step">
+              <div class="next-step-icon mail-icon" aria-hidden="true"></div>
+              <h3>I’ll Review Your Message</h3>
+              <p>I read every message personally and make sure I understand your needs.</p>
+            </article>
+
+            <article class="next-step">
+              <div class="next-step-icon calendar-icon" aria-hidden="true"></div>
+              <h3>We’ll Connect</h3>
+              <p>I’ll answer your questions, clarify anything needed, and walk you through the next best step.</p>
+            </article>
+
+            <article class="next-step">
+              <div class="next-step-icon chat-icon" aria-hidden="true"></div>
+              <h3>We’ll Create A Plan</h3>
+              <p>We’ll talk through your priorities, challenges, and how the right support can lighten your load.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-cta" id="book">
+      <div class="footer-icon calendar-icon" aria-hidden="true"></div>
+      <div>
+        <h2>Ready to talk through what support could look like?</h2>
+        <p>Whether you know exactly what you need or you are still sorting it out, we can start with a simple conversation. We’ll talk through where your time is going, what feels heavy right now, and what kind of support would make the biggest difference first.</p>
+      </div>
+      <a class="button button-cream" href="mailto:hello@inboxtoops.co">Book Your Free Discovery Call</a>
+    </footer>
+
+    <script>
+      const header = document.querySelector(".site-header");
+
+      const updateHeaderSize = () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 24);
+      };
+
+      updateHeaderSize();
+      window.addEventListener("scroll", updateHeaderSize, { passive: true });
+    </script>
+  </body>
+</html>
