@@ -1857,7 +1857,11 @@ img {
     display: block;
     flex: 0 0 86%;
     min-width: 280px;
+    min-height: auto;
     scroll-snap-align: center;
+    background: var(--warm);
+    border: 1px solid rgba(36, 76, 56, .14);
+    box-shadow: 0 14px 30px rgba(36, 76, 56, .08);
   }
 
   .not-sure-mobile-card .button {
