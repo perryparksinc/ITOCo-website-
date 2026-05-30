@@ -1737,13 +1737,18 @@ img {
   }
 
   .hero h1 {
-    max-width: 100%;
-    margin: 0 0 120px;
+    max-width: 78%;
+    margin: 0 0 26px;
     color: var(--green);
     font-size: 34px;
     line-height: 1.04;
+    text-align: left;
   }
 
+  .contact-page .contact-hero h1 {
+    max-width: 82%;
+  }
+  
   .hero p {
     max-width: 100%;
     margin: 0 0 28px;
