@@ -1853,8 +1853,11 @@ img {
     display: none;
   }
 
-  .not-sure-mobile-card {
+  .service-grid .not-sure-mobile-card {
     display: block;
+    flex: 0 0 86%;
+    min-width: 280px;
+    scroll-snap-align: center;
   }
 
   .not-sure-mobile-card .button {
