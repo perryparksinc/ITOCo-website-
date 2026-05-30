@@ -1772,7 +1772,10 @@ img {
   .hero-actions .button {
     width: 100%;
   }
-
+  
+  .hero:not(.contact-hero) h1 {
+    max-width: 64%;
+  }
   .section {
     padding-top: 40px;
     padding-bottom: 40px;
